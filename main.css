@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 2px;
+  color: white;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(20,20,20);
+  padding: 0;
+  margin: 0;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content:  space-between;
+  align-items:  center;
+  background-color: rgb(35, 35, 35);
+  color: white;
+  border-bottom: 1px solid rgb(50, 50, 50);
+}
+
+.Name {
+  font-size:  1.5rem;
+  margin: .5rem;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+  border-bottom: 1px rgb(35, 35, 35);
+  transition: ease-out .3s;
+}
+
+.navbar-links li a:hover {
+  transition: ease-out .3s;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+.navbar-links li a:active {
+  transition: ease-out .1s;
+  background-color: rgb(200, 200, 200);
+}
