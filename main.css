@@ -21,6 +21,16 @@ body {
   display: block;
 }
 
+[ShowcaseFrames] {
+  border-bottom: 3px solid rgb(90, 90, 90);
+}
+
+:hover[ShowcaseFrames] {
+  border-bottom: 3px solid rgb(255, 255, 255);
+  transition: ease-out 1s;
+}
+
+
 .tab-content {
   margin-left: 20px;
   margin-right: 20px;
@@ -37,6 +47,7 @@ body {
   color: white;
   border-bottom: 1px solid rgb(50, 50, 50);
 }
+
 
 .Name {
   font-size:  1.5rem;
@@ -60,13 +71,12 @@ body {
   display: block;
   justify-content: center;
   text-align:  center;
-  border-bottom: 1px rgb(35, 35, 35);
   transition: ease-out .3s;
 }
 
 .navbar-links li a:hover {
+  background-color: rgb(100, 100, 100);
   transition: ease-out .3s;
-  border-bottom: 1px solid white;
   cursor: pointer;
 }
 
@@ -79,3 +89,4 @@ body {
   transition: ease-out .1s;
   background-color: rgb(200, 200, 200);
 }
+
