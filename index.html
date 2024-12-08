@@ -1,49 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://kit.fontawesome.com/518cc25af9.js" crossorigin="anonymous"></script>
-  <script src="main.js" defer></script>
-  <link href="main.css" rel="stylesheet">
-  <link rel="icon" href="https://pics.freeicons.io/uploads/icons/png/18601963621662157960-512.png">
-  <title>Le Portfolio</title>
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Just A Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="Name">dEd's Portfolio</div>
-    <div class="navbar-links">
-      <ul class="tabs">
-        <li><a href="#" data-tab-target="#about" class="active tab">About</a></li>
-        <li><a href="#" data-tab-target="#showcase" class="tab">Showcase</a></li>
-        <li><a href="#" data-tab-target="#info" class="tab">Info</a></li>
-      </ul>
-    </div>
-  </nav>
+    <div id="snowflakes" class="snowflakes"></div>
 
-  <div class="tab-content">
-    <div id="about" data-tab-content class="active">
-      <h1>About</h1>
-      <p>I like to make random stuff  my discord is : d!#4411</p>
+    <div class="container">
+        <div class="left-panel">
+            <div class="creation">
+                <h3>Kinda Realistic slot machine</h3>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/pAva3S4eiKs?si=JT7nePA93E5F9BJG" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p>I wanted to have a bit of a dopamine rush but didn't want to win and get rich instantly, so I decided to make this slot machine, and yes, I know it's against Roblox's TOS</p>
+            </div>
+            <div class="creation">
+                <h3>A velocity movement system</h3>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/-fhUT4mSCWA?si=5RnVySkfQKozvTUD" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p>It supports non humanoid characters for accurate physics | I wanted something fast and fun but couldn't find it, so I made this, and yes, I took inspiration from Quake's movement</p>
+                <button type="test-button" onclick="window.open('https://www.roblox.com/games/90359551138607/Velocity-Movement', '_blank');">Test it out</button>
+            </div>
+
+            <div class="creation">
+                <h3>Telecanisis grab and throw</h3>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/-xrUGLPDVW0?si=BOLy2rWvWcMIZ6Kb" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p>This is one of my older projects, so it could be better, but the effects and other elements were made by me, including the terrible walking animation :D. I took a lot of inspiration from a game called Control for this one</p>
+            </div>
+
+            <div class="creation">
+                <h3>Blood splat effect using RaycastHitboxV4</h3>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/MHeUo84LQlI?si=gwyfr60woIqepMcq" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p>Just a simple blood splat effect nothing much to say about it</p>
+                <button class="test-button" onclick="window.open('https://www.roblox.com/games/111921854710442/Spilling-Jam', '_blank');">Test it out</button>
+            </div>
+
+        </div>
+
+        <div class="right-panel">
+            <h2>About Me</h2>
+            <p>I'm just a chill guy who creates things sometimes complex, sometimes not so much based on random ideas that pop into my head. While it's mostly a hobby for me, I'd love to find a way to earn something from it.</p>
+        </div>
     </div>
-    <div id="showcase" data-tab-content>
-      <h1>Previous Work</h1>
-      <div class="showcases">
-        <iframe src="https://streamable.com/e/tvsl40?autoplay=1" frameborder="0" width="360" height="215" allowfullscreen allow="autoplay" style="width:360;height:215;overflow:hidden;" ShowcaseFrames></iframe>
-        <iframe src="https://streamable.com/e/zxa1zu?autoplay=1" frameborder="0" width="360" height="215" allowfullscreen allow="autoplay" style="width:360;height:215;overflow:hidden;" ShowcaseFrames></iframe>
-        <iframe src="https://streamable.com/e/cmonkw?autoplay=1" frameborder="0" width="360" height="215" allowfullscreen allow="autoplay" style="width:360;height:215;overflow:hidden;" ShowcaseFrames></iframe>
-        <iframe src="https://streamable.com/e/5hjbiq?autoplay=1" frameborder="0" width="360" height="215" allowfullscreen allow="autoplay" style="width:360;height:215;overflow:hidden;" ShowcaseFrames></iframe>
-        <iframe src="https://streamable.com/e/7po973?autoplay=1" frameborder="0" width="360" height="215" allowfullscreen allow="autoplay" style="width:360;height:215;overflow:hidden;" ShowcaseFrames></iframe>
-        <iframe src="https://streamable.com/e/6mu8rp?autoplay=1" frameborder="0" width="360" height="215" allowfullscreen allow="autoplay" style="width:360;height:215;overflow:hidden;" ShowcaseFrames></iframe>
-        <iframe src="https://streamable.com/e/da6d51?autoplay=1" frameborder="0" width="360" height="215" allowfullscreen allow="autoplay" style="width:360;height:215;overflow:hidden;" ShowcaseFrames></iframe>
-      </div>
-    </div>
-    <div id="info" data-tab-content>
-      <h1>Info</h1>
-      <p>Yea I dont know what to add here as you see this is very undone :D</p>
-    </div>
-  </div>
 </body>
 </html>
