@@ -1,33 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const homePage = document.getElementById('home-page');
     const container = document.querySelector('.container');
+    
+    const rainContainer = document.getElementById('raindrops');
+    rainContainer.id = 'raindrops';
+    rainContainer.className = 'raindrops';
 
-    function createSnowflake() {
-        const snowflakesContainer = document.getElementById('snowflakes');
-        const snowflake = document.createElement('div');
-        snowflake.classList.add('snowflake');
+    function createRaindrop() {
+        const raindrop = document.createElement('div');
+        raindrop.classList.add('raindrop');
 
-        const size = Math.random() * 5 + 2;
-        snowflake.style.width = `${size}px`;
-        snowflake.style.height = `${size}px`;
+        const width = Math.random() * 1.1 + 1;
+        const height = Math.random() * 5 + 20;
+        raindrop.style.width = `${width}px`;
+        raindrop.style.height = `${height}px`;
 
         const left = Math.random() * window.innerWidth;
-        snowflake.style.left = `${left}px`;
+        raindrop.style.left = `${left}px`;
 
-        const animationDuration = Math.random() * 5 + 5;
-        snowflake.style.animationDuration = `${animationDuration}s`;
+        const animationDuration = Math.random() * 0.5 + 0.5;
+        raindrop.style.animationDuration = `${animationDuration}s`;
 
-        snowflakesContainer.appendChild(snowflake);
+        rainContainer.appendChild(raindrop);
+        
+        setTimeout(() => {
+            raindrop.remove();
+        }, animationDuration * 1000);
     }
 
-    let snowflakeInterval = setInterval(() => {
-        createSnowflake();
-    }, 50);
+    let raindropInterval = setInterval(() => {
+        for (let i = 0; i < 3; i++) {
+            createRaindrop();
+        }
+    }, 40);
 
-    setTimeout(() => {
-        clearInterval(snowflakeInterval);
-    }, 10000);
-
-    homePage.style.display = 'none';
     container.style.display = 'flex';
 });
