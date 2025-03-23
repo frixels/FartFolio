@@ -12,7 +12,7 @@ body {
     flex-direction: column;
 }
 
-#snowflakes {
+#raindrops {
     position: absolute;
     left: 0;
     width: 100%;
@@ -45,7 +45,7 @@ body {
 
 .right-panel {
     width: 45%;
-    height: 19%;
+    height: 23%;
     padding: 20px;
     overflow-y: scroll;
 }
@@ -117,7 +117,7 @@ body {
 
 .right-panel p {
     font-size: 1.2rem;
-    line-height: 1.6;
+    line-height: 1.2;
 }
 
 button {
@@ -143,22 +143,61 @@ button:active {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-
-.snowflake {
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    opacity: 0.8;
-    pointer-events: none;
-    animation: fall linear infinite;
+/* New styles for icon buttons */
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
 }
 
-@keyframes fall {
+.icon-button {
+    background-color: #444;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.icon-button:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.icon-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.raindrop {
+    position: absolute;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(65, 65, 65, 0.4) 100%);
+    border-radius: 0 0 50% 50%;
+    opacity: 0.7;
+    pointer-events: none;
+    animation: rain linear infinite;
+    transform: rotate(-10deg);
+}
+
+@keyframes rain {
     0% {
-        opacity: 0.8;
+        opacity: 0.7;
+        transform: translateY(0) translateX(0) rotate(-10deg);
     }
     100% {
-        transform: translateY(100vh);
-        opacity: 0.8;
+        transform: translateY(100vh) translateX(5vh) rotate(-10deg);
+        opacity: 0.7;
     }
 }
